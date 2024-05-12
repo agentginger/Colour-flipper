@@ -8,24 +8,24 @@ const buttons = document.querySelectorAll("button");
 
 green.addEventListener("click", greenSwap);
 function greenSwap() {
-    body.classList.toggle("bgGreen")
-    body.classList.remove("bgRed")
-    body.classList.remove("bgBlue")
+    body.removeAttribute("class")
+    body.classList.add("bgGreen")
+    
 };
 
 red.addEventListener("click", redSwap);
 function redSwap() {
+    body.removeAttribute("class")
     body.classList.toggle("bgRed");
-    body.classList.remove("bgBlue");
-    body.classList.remove("bgGreen");
+    
 };
 
 
 blue.addEventListener("click", blueSwap);
 function blueSwap() {
+    body.removeAttribute("class")
     body.classList.toggle("bgBlue");
-    body.classList.remove("bgGreen");
-    body.classList.remove("bgRed");
+    
 }
 
 
